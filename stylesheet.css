@@ -8,6 +8,25 @@
   z-index: 0;
 }
 
+.dev-icons-list {
+  list-style: none;
+  font-size: 4em;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.dev-icons {
+  display: inline-block;
+}
+
+.dev-icons > p {
+  font-size: 10px;
+}
+
+.text-1em {
+  font-size: 1em;
+}
 .intro-text {
   letter-spacing: 1px;
   color: #868e96 !important;
