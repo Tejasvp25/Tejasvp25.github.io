@@ -65,6 +65,10 @@
   transform-origin: 70% 70%;
 }
 
+.project-logo {
+  height: 100px;
+}
+
 @font-face {
   font-family: "Agustina";
   src: url("/Agustina.woff") format("woff");
