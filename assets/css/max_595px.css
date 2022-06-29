@@ -1,0 +1,82 @@
+@media only screen and (max-width: 595px) {
+  .Navbar__Items,
+  .Navbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+  }
+
+  .Navbar__Items {
+    display: none;
+  }
+
+  .Navbar__Items--right {
+    margin-left: 0;
+  }
+
+  .Navbar__ToggleShow {
+    display: flex;
+    position: unset;
+  }
+
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+    font-size: 23px;
+    color: var(--accent-color);
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-me {
+    max-width: 90vw;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .intro-section {
+    margin: auto auto;
+  }
+
+  .intro-text {
+    padding: 0 15px;
+    line-height: 1.5em;
+    margin-top: 10px;
+  }
+
+  .card {
+    flex-basis: 75%;
+  }
+
+  .intro-section > img {
+    margin: 30px auto auto auto;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .project-card {
+    width: 80vw;
+  }
+
+  .project-card > img {
+    width: 100%;
+  }
+
+  .achievement-card {
+    width: 80vw;
+  }
+}

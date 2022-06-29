@@ -1,181 +1,286 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8" />
-<!-- CSS only -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.13.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-<link href="stylesheet.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
 
-<head>
-    <title>Tejas.github.io</title>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link href="/assets/css/stylesheet.css" rel="stylesheet" />
+    <link href="/assets/css/max_595px.css" rel="stylesheet" />
+    <link href="/assets/css/max_520px.css" rel="stylesheet" />
+    <link href="/assets/css/max_970px.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0b41d3174f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tejas Patil</title>
+  </head>
 
-</head>
-
-
-<body class="m-2 fade-in">
-
-    <header>
-        <nav class="navbar navbar-light">
-            <span class="ml-4">
-                <span class="header-text">
-                    < </span> <span class="header-text-logo">Tejas Patil</span>
-                        <span class="header-text"> /></span>
-                </span>
-        </nav>
-    </header>
-    <!-- Introduction Part -->
-    <div class="row">
-        <div class="col-sm ml-4 mt-5">
-            <h1 class="font-weight-bold">
-                Hi all, I'm Tejas <span class="wave-anim">
-                    <img alt="👋" draggable="false" src="https://twemoji.maxcdn.com/2/72x72/1f44b.png"
-                        style="height: 1em; width: 1em;" />
-                </span>
-            </h1>
-            <p class="h4 m-l-5 intro-text">
-                A Passionate Android Developer <img src="https://twemoji.maxcdn.com/2/72x72/1f680.png"
-                    style="width: 1em; height: 1em;" />
-                having an experience of building Mobile applications with Native and
-                some other cool libraries and frameworks.
-            </p>
-            <div class="social-icons">
-                <a href="https://github.com/Tejasvp25" class="mr-2 ml-2 custom-link">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:tejasvp25@gmail.com" class="mr-2 ml-2 custom-link">
-                    <i class="fab fa-google"></i>
-                </a>
-            </div>
-        </div>
-        <div class="col-sm auto-mx m-3">
-            <img src="manOnTable.svg" class="img-fluid rounded" />
-        </div>
+  <header>
+    <div class="Navbar">
+      <div class="Navbar__Link-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <br />
+      <nav class="Navbar__Items">
+        <a onclick="scrollToElement(event,'#contact')" class="Navbar__Link"
+          >Contact Me</a
+        >
+        <a href="#" class="Navbar__Link">Resume</a>
+        <a onclick="scrollToElement(event,'#skills')" class="Navbar__Link"
+          >Skills</a
+        >
+        <a onclick="scrollToElement(event,'#achievements')" class="Navbar__Link"
+          >Achievements</a
+        >
+        <a
+          onclick="scrollToElement(event,'#projects-section')"
+          class="Navbar__Link"
+          >Projects</a
+        >
+      </nav>
     </div>
+  </header>
 
-    <div class="row mt-5">
-        <div class="col-sm auto-mx m-3">
-            <img src="webDeveloper.svg" class="img-fluid rounded" />
-        </div>
-        <div class="col-sm ml-5 mt-5">
-            <h1>What i do ?</h1>
-            <p class="text-1em">CRAZY DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK</p>
-            <div>
-                <ul class="dev-icons-list">
-                    <li class="dev-icons"><img
-                            src="https://camo.githubusercontent.com/ec145d20be90031699f9674c504e8902b8b27fe1/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f646172746c616e672f646172746c616e672d69636f6e2e737667"
-                            alt="dart" width="40" height="40"
-                            data-canonical-src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"
-                            style="max-width:100%;">
-                        <p>Dart</p>
-                    </li>
-                    <li class="dev-icons"><img
-                            src="https://camo.githubusercontent.com/b912b7cde6980dbd24969c2cf4e1855af0079310/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f666c7574746572696f2f666c7574746572696f2d69636f6e2e737667"
-                            alt="flutter" width="40" height="40"
-                            data-canonical-src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"
-                            style="max-width:100%;">
-                        <p>Flutter</p>
-                    </li>
-                    <li class="dev-icons"><i class="devicon-android-plain-wordmark colored">
-                        </i>
-                        <p>Android</p>
-                    </li>
-                    <li class="dev-icons"><i class="devicon-bootstrap-plain-wordmark colored">
-                        </i>
-                        <p>Bootstrap</p>
-                    </li>
-                    <li class="dev-icons"><i class="devicon-css3-plain-wordmark colored">
-                        </i>
-                        <p>CSS3</p>
-                    </li>
-                    <li class="dev-icons"><i class="devicon-html5-plain-wordmark colored">
-                        </i>
-                        <p>HTML5</p>
-                    </li>
-                    <li class="dev-icons"><i class="devicon-go-plain colored">
-                        </i>
-                        <p>Golang</p>
-                    </li>
-                    <li class="dev-icons"><i class="devicon-java-plain-wordmark colored">
-                        </i>
-                        <p>Java</p>
-                    </li>
-                    <li class="dev-icons"><i class="devicon-javascript-plain colored">
-                        </i>
-                        <p>Javascript</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <body class="fade-in">
+    <div class="nav" data-aos="fade-down" data-aos-duration="500">
+      <button class="nav-button" onclick="scrollToElement(event,'#contact')">
+        Contact Me
+      </button>
+      <button class="nav-button">Resume</button>
+      <button class="nav-button" onclick="scrollToElement(event,'#skills')">
+        Skills
+      </button>
+      <button
+        class="nav-button"
+        onclick="scrollToElement(event,'#achievements')"
+      >
+        Achievements
+      </button>
+      <button
+        class="nav-button"
+        onclick="scrollToElement(event,'#projects-section')"
+      >
+        Projects
+      </button>
     </div>
+    <!-- Intro -->
+    <section class="intro-section text-center">
+      <!-- <div class="column"> -->
+      <img
+        src="assets/images/profile.jpg"
+        alt=""
+        width="300px"
+        height="300px"
+        data-aos="zoom-in"
+        data-aos-duration="500"
+      />
+      <br />
+      <div data-aos="fade-right" data-aos-duration="500">
+        <h1 class="title font-weight-bold">Hello, I'm Tejas Patil</h1>
+        <h2 class="title font-weight-bold italic">( tejasvp25 )</h2>
+        <h4 class="intro-text">Full Stack Web developer | Android Developer</h4>
+        <br />
+      </div>
+      <div class="about-me" data-aos="fade-up" data-aos-duration="500">
+        <h2 class="about-me-header">About Me</h2>
 
-    <br>
-    <br>
-    <h2 class="text-center">Recent Projects</h2>
-    <br>
+        <p>
+          I'm a passionate self-taught Full Stack Web developer from India. My
+          passion for software lies with dreaming up ideas and making them come
+          through code. I take great care in the experience, architecture, and
+          code quality of the things I build. I am also an Open-Source
+          enthusiast. I learned a lot from the Open-Source Community and I love
+          how collaboration and knowledge sharing happened through open-source.
+        </p>
+      </div>
+    </section>
 
-    <div class="row justify-content-center">
-        <div class="col-lg-3 col-sm m-2">
-            <div class="card project-card">
-                <img class="card-img-top project-logo mt-4" src="./logo_flutter_1080px_clr.svg" alt="Card image">
-                <div class="card-body">
-                    <h5 class="card-title">Torrent Search Android App</h5>
-                    <p class="card-text">An Simple app written in Flutter Framework to Search your favourite Torrent
-                        Indexers</p>
-                    <a href="https://github.com/Torrent-Search/flutter-torrent-search" class="btn btn-primary">Repo
-                        Link</a>
-                </div>
-            </div>
+    <!-- Skills -->
+    <section class="wrapper" id="skills">
+      <h2
+        class="text-center"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        style="margin-top: 10vh"
+      >
+        My Skills
+      </h2>
+      <br />
+      <div class="row">
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            width="35px"
+            height="35px"
+          />
+          <div class="card-text">
+            <h3>Web Development</h3>
+            <span>HTML, CSS, JavaScript</span>
+          </div>
         </div>
-        <div class="col-lg-3 col-sm m-2">
-            <div class="card project-card">
-                <img class="card-img-top project-logo mt-4" src="./Go-Logo_Aqua.svg" alt="Card image">
-                <div class="card-body">
-                    <h5 class="card-title">Torrent Scraper API (Golang)</h5>
-                    <p class="card-text">Scraper API for Torrent Search App</p>
-                    <a href="https://github.com/Torrent-Search/torr_scraper_golang" class="btn btn-primary">Repo
-                        Link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm m-2">
-            <div class="card project-card">
-                <img class="card-img-top project-logo mt-4" src="./Node.js_logo.svg" alt="Card image">
-                <div class="card-body">
-                    <h5 class="card-title">Torrent Search (Noje JS)</h5>
-                    <p class="card-text">Scraper API for Torrent Search App</p>
-                    <h5>Deprecated</h5>
-                    <br>
 
-                    <a href="https://github.com/Torrent-Search/torr_scraper_node" class="btn btn-primary">Repo Link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm m-2">
-            <div class="card project-card">
-                <img class="card-img-top project-logo mt-4" src="./heroku-logo-solid-gradient.svg" alt="Card image">
-                <div class="card-body">
-                    <h5 class="card-title">Heroku Dyno Utils</h5>
-                    <p class="card-text">Utility app written in Flutter Framework to Manage Heroku app dynos</p>
-                    <a href="https://github.com/Tejasvp25/heroku_dyno_utils" class="btn btn-primary">Repo Link</a>
-                </div>
-            </div>
-        </div>
-    </div>
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            width="35px"
+            height="35px"
+          />
 
-    <div class="h5 text-center m-3">Made With <i class="fas fa-heart" style="color: red;"></i> in India </div>
-</body>
-<!-- JS, Popper.js, and jQuery -->
-<script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script> -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+          <div class="card-text">
+            <h3>Frontend Frameworks</h3>
+            <span>React, Vue</span>
+          </div>
+        </div>
 
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            width="35px"
+            height="35px"
+          />
+          <div class="card-text">
+            <h3>Backend Frameworks</h3>
+            <span>Node.js, Express</span>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            width="35px"
+            height="35px"
+          />
+          <div class="card-text">
+            <h3>Languages</h3>
+            <span>JavaScript, Java, Kotlin, C, C++</span>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain.svg"
+            width="35px"
+            height="35px"
+          />
+          <div class="card-text">
+            <h3>Android Development</h3>
+            <span>Java, Kotlin, Android Studio</span>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+            width="35px"
+            height="35px"
+          />
+          <div class="card-text">
+            <h3>Database Management System</h3>
+            <span>MongoDB, MySQL, PostreSQL</span>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg"
+            width="35px"
+            height="35px"
+          />
+          <div class="card-text">
+            <h3>DevOps And Deployment</h3>
+            <span>Docker, Heroku, Netlify, GCP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="achievements" id="achievements">
+      <h2
+        class="text-center"
+        style="margin-top: 10vh"
+        data-aos="fade-up"
+        data-aos-duration="500"
+      >
+        My Achievements
+      </h2>
+      <div class="achievement-card" data-aos="fade-up" data-aos-duration="500">
+        <img
+          src="https://avatars.githubusercontent.com/u/81792437?s=400&u=9f0706aab5a9a087fbc6f974d29444bda3b5745c&v=4"
+          alt="Voltage OS"
+          width="100px"
+          height="100px"
+        />
+        <div class="achievement-text">
+          <h3>Voltage OS</h3>
+          <h4>
+            Core Team Member <br />
+            Device Maintainer for Phoenix (Poco X2)
+          </h4>
+          <span>
+            <a href="https://github.com/voltageos"
+              ><i class="fa-brands fa-github hover-underline-animation"></i
+            ></a>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects-section">
+      <h2
+        class="text-center"
+        style="margin-top: 10vh"
+        data-aos="fade-up"
+        data-aos-duration="500"
+      >
+        My Projects
+      </h2>
+      <div class="projects" id="projects"></div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-section" data-aos="zoom-in" data-aos-duration="500">
+        <h2 class="text-center">Contact</h2>
+        <br />
+        <h1>Reach Out to Me!</h1>
+        <h4>
+          DISCUSS A PROJECT OR JUST WANT TO SAY HI ?
+          <br />MY INBOX IS OPEN FOR ALL
+        </h4>
+
+        <div class="contact-details">
+          <p><i class="fa-solid fa-envelope"></i> tejasvp25@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91-7558385438</p>
+        </div>
+
+        <div>
+          <i class="fas fa-map-marker-alt"></i>
+          <span>India</span>
+        </div>
+        <footer>
+          <h4 class="text-center">
+            <i class="fa-solid fa-code"></i> With
+            <i class="fa-solid fa-heart" style="color: red"></i> in India
+            <br />
+            By Tejasvp25
+          </h4>
+        </footer>
+      </div>
+    </section>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+  <script src="/assets/js/app.js"></script>
 </html>
