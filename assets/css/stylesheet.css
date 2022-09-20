@@ -35,10 +35,10 @@ body {
 }
 
 .nav-button {
-  padding: 0px 20px;
-  margin: 20px 0;
+  padding: 0px 10px;
+  margin: 20px 10px;
   /* max-height: 3vh; */
-  min-height: 7vh;
+  min-height: 5vh;
   background-color: transparent;
   color: #fff;
   justify-self: end;
@@ -507,4 +507,52 @@ footer {
 
 .Navbar__Link-toggle {
   display: none;
+}
+.social-menu ul {
+  /* position: absolute; */
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: 15dp;
+  display: flex;
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fab {
+  font-size: 25px;
+  line-height: 50px;
+  transition: 0.3s;
+  color: #000;
+}
+
+.social-menu ul li .fab:hover {
+  color: #fff;
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(107, 107, 107);
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-menu ul li a:hover {
+  transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #0077b5;
 }
