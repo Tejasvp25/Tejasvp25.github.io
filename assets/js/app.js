@@ -4,7 +4,7 @@ const projects = [
     img: "assets/images/torsearch.jpg",
     description:
       "An application that allows users to search for torrents on the web from multiple sources.",
-    link: "https://torrent-search.github.io/torrent-search-web",
+    // link: "https://torrent-search.github.io/torrent-search-web",
     github: "https://github.com/Torrent-Search/torrent-search-web",
     tags: ["React", "CSS", "Bootstrap"],
   },
@@ -12,15 +12,15 @@ const projects = [
     title: "Music Search",
     description:
       "An application that allows users to search for music on the web from JioSaavn API and Youtube (Experimental).",
-    link: "https://tejasvp25.github.io/music-search-web/",
+    // link: "https://tejasvp25.github.io/music-search-web/",
     github: "https://github.com/Tejasvp25/music-search-web",
     tags: ["React"],
   },
   {
     title: "Yet Another Paste Bin",
     description: "An application intended to share Text and Code snippets",
-    link: "https://yapbin.netlify.app/",
-    github: "",
+    // link: "https://yapbin.netlify.app/",
+    github: "https://github.com/Yet-Another-Paste-Bin",
     tags: [
       "Javascript",
       "React",
@@ -113,7 +113,6 @@ function generateEle(projectDetails) {
     const visitEleLogo = document.createElement("i");
     visitEleLogo.classList.add("fa-solid");
     visitEleLogo.classList.add("fa-external-link-alt");
-    visitEleLogo.classList.add("hover-underline-animation");
     linkEle.appendChild(visitEleLogo);
     mainChildElement.appendChild(linkEle);
   }
@@ -121,10 +120,11 @@ function generateEle(projectDetails) {
   if (github) {
     const githubEle = document.createElement("a");
     githubEle.href = github;
+    githubEle.target = "blank";
     const githubEleLogo = document.createElement("i");
     githubEleLogo.classList.add("fa-brands");
+    githubEleLogo.classList.add("fab");
     githubEleLogo.classList.add("fa-github");
-    githubEleLogo.classList.add("hover-underline-animation");
     githubEle.appendChild(githubEleLogo);
     mainChildElement.appendChild(githubEle);
   }
